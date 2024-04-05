@@ -363,9 +363,9 @@ img {
     justify-content: center;
     margin-right: 50px;
     text-align: center;
-}
-
-.movie__img--wrapper img {
+  }
+  
+  .movie__img--wrapper img {
     width: 100%;
     max-width: 300px;
 }
@@ -409,7 +409,13 @@ RESULTS
   }
 }
 
-
+.big__spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  font-size: 64px;
+}
 
 @media (hover: none) {
     .movie__content {

@@ -1,20 +1,19 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 
 function Search() {
   const [loading, setLoading] = useState(false);
-  const { query } = useParams()
+  const { query } = useParams();
   const [searchQuery, setSearchQuery] = useState(query);
   const navigate = useNavigate();
 
-  function searchTerm(event) {
+  function searchTerm() {
     if (searchQuery) {
       setLoading(true);
       setTimeout(() => {
         navigate(`/movies/${searchQuery}`);
-        setLoading(false)
+        setLoading(false);
       }, 1000);
     }
   }
