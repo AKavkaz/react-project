@@ -22,7 +22,7 @@ function Search() {
       <input
         type="text"
         className="input"
-        placeholder=" Enter Keywords..."
+        placeholder="Enter Keywords..."
         value={searchQuery}
         onChange={(event) => setSearchQuery(event.target.value)}
         onKeyDown={(event) => event.key === "Enter" && searchTerm(searchQuery)}
